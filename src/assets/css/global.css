@@ -1,0 +1,103 @@
+/* 全局样式表 */
+
+
+/*
+ min-width: 1366px;
+ 当页面不足1366px的时候 会出现横纵滚动条以免影响布局
+*/
+
+html,
+body,
+#app {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    min-width: 1366px;
+}
+
+
+/* 面包屑导航 el-breadcrumb */
+
+
+/* 因为每个选项组件都有一个卡片视图 所以要写在全局里 */
+
+.el-breadcrumb {
+    margin-bottom: 15px;
+    font-size: 12px;
+}
+
+
+/* 还有卡片视图也是 el-card */
+
+
+/* 因为卡片视图默认样式等级比较高 所以不生效的时候加个!important就好 */
+
+.el-card {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15) !important;
+}
+
+.el-table {
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+.el-pagination {
+    margin-top: 15px;
+}
+
+.el-tag {
+    margin: 7px;
+}
+
+.bdtop {
+    border-top: 1px solid #eee;
+}
+
+.bdbottom {
+    border-bottom: 1px solid #eee;
+}
+
+.vcenter {
+    display: flex;
+    align-items: center;
+}
+
+.el-icon-success {
+    color: chartreuse;
+}
+
+.el-icon-error {
+    color: red;
+}
+
+
+/* 级联选择器的高度 */
+
+.el-scrollbar__wrap {
+    height: 300px !important;
+}
+
+
+/* 级联选择器的宽度 */
+
+.el-cascader {
+    width: 100%;
+}
+
+
+/* 步骤条样式 */
+
+.el-steps {
+    margin: 15px 0;
+}
+
+.el-step__title {
+    font-size: 13px;
+}
+
+
+/* 富文本编辑器样式 */
+
+.ql-editor {
+    min-height: 300px;
+}
